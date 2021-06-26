@@ -4,7 +4,7 @@
  *
  */
 
-
+import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -44,6 +44,9 @@ public class TesterList {
 				System.out.println();
 			}
 		}
+
+		Collections.sort(nombres);
+		System.out.println("Liste triée : " + nombres); 
 		
 
 
