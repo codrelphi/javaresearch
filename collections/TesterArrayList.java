@@ -25,7 +25,10 @@ public class TesterArrayList {
 		 * contains()
 		 * clear()
 		 */
-
+		
+		int indice;
+		String animalAVerifier;
+		Scanner lectureClavier;
 		ArrayList<String> animaux = new ArrayList<String>(5);
 		animaux.add("lion");
 		animaux.add("chat");
@@ -51,8 +54,7 @@ public class TesterArrayList {
 
 		System.out.println("Animaux : " + animaux);
 
-		Scanner lectureClavier = new Scanner(System.in);
-		int indice;
+		lectureClavier = new Scanner(System.in);
 		do {
 			System.out.print("Quel indice voulez-vous ? : ");
 			indice = lectureClavier.nextInt();
@@ -62,7 +64,7 @@ public class TesterArrayList {
 		System.out.println("Animaux : " + animaux);
 		
 		System.out.print("Est-ce que la liste contient : ");
-		var animalAVerifier = lectureClavier.next();
+		animalAVerifier = lectureClavier.next();
 		
 		System.out.println("La liste " + animaux);
 		if (animaux.contains(animalAVerifier))
