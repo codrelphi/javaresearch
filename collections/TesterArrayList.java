@@ -72,6 +72,11 @@ public class TesterArrayList {
 		else 
 			System.out.println(" ne contient pas : " + animalAVerifier);
 		
+		animaux.clear();
+		System.out.print("Animaux : " + animaux);
+		if (animaux.size() == 0) System.out.print(" : la liste a été vidée ! Au revoir !");
+		else System.out.print(" : la liste est toujours là !");
+		System.out.println();
 	}
 }
 
