@@ -29,11 +29,14 @@ public class TestHashMap {
 		System.out.println(" Taille : " + nombres.size());
 		System.out.println(" Vide ou pas ? : " + nombres.isEmpty());
 
-		Collection c = nombres.values();
-		for (Iterator i = c.iterator(); i.hasNext();) {
+		Collection<String> c = nombres.values();
+		System.out.println("Parcours en utilisant un Iterator");
+		for (Iterator i = c.iterator(); i.hasNext();)
 			System.out.println(i.next());
-		
-		}
+
+		System.out.println("Parcourir le HashMap sans Iterator");
+		for (var n : c)
+			System.out.println(n);
 
 	}
 
